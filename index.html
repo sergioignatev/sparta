@@ -4,6 +4,7 @@
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="media.css">
   <title>Sparta</title>
   <meta charset="utf-8">
  
@@ -13,6 +14,7 @@
 
     <div id="left">
         <img id="logo" src="Логотип.png">
+        <div id="mob"><i id="show" onclick="Show()" style="font-size:60px;" class="fa fa-bars" aria-hidden="true"></i></div>
     </div>
 
 
@@ -89,9 +91,41 @@
 <script>
     setInterval(height,1)
     function height(){
+        let h=0;
+        let disp;
 let w=window.innerWidth;
-let h=w/12.8;
-document.getElementById("main").style.height=h+"px"
+if(w>1037){
+    h=w/12.8;
+    disp="none"
+}else{h=100;disp="block"}
+document.getElementById("main").style.height=h+"px";
+document.getElementById("mob").style.display=disp
     }
+
+
+</script>
+<script>
+    let sw=false
+    function Show(){
+if(sw==true){
+    sw=false
+}else {sw=true}
+
+if(sw==false){
+document.getElementById("show").classList.add("fa-bars")
+document.getElementById("show").classList.remove("fa-times-circle")
+document.getElementById("right").style.display="none"
+document.getElementById("rest").style.display="none"
+}
+else{document.getElementById("show").classList.add("fa-times-circle")
+document.getElementById("show").classList.remove("fa-bars") 
+document.getElementById("right").style.display="flex"
+document.getElementById("rest").style.display="flex"
+
+}
+
+    }
+
+
 </script>
 </html>
