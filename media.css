@@ -17,6 +17,7 @@
     #logo{margin-left:15px;}
     #mob{margin-right:15px;}
     #icon{margin-right:10px;}
+    .li{font-size:18px;}
 }
 @media(max-width:712px){
 #rest-bottom{
