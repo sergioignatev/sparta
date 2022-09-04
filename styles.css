@@ -21,6 +21,7 @@ width:62%;
 flex-direction:column;
 }
 .li{width:100%;display:flex;justify-content: center;}
+.li:hover{color:var(--green)}
 #rest-top{height:46.6%;
     border-bottom:1px solid var(--border);
     width:100%;
@@ -41,6 +42,7 @@ display:flex;
     justify-content: space-around;
     
 }
+.lang:hover{color:var(--green)}
 #rest-bottom{height:53.4%;width:100%;display:flex;}
 #contacts{
     font-size: large;
@@ -62,7 +64,7 @@ display:flex;
     justify-content: space-around;
 }
 
-#icon{height:100%}
+#icon{font-size: larger;}
 
 #dots{
     display:grid;
@@ -81,7 +83,12 @@ display:flex;
     width:20%;
     border-right:1px solid var(--border);
     }
-
+    #products:hover{color:white;
+    background:var(--green)
+    }
+#products:hover .dot{
+    background:white;
+}
     #search{width:63%;
     border-right:1px solid var(--border);
     border-bottom:1px solid var(--border);
