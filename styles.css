@@ -108,7 +108,7 @@ display:flex;
     #search-right{
         width:14%;
         height:100%;
-        background:lightgray;
+        background:var(--border);
         display:flex;
         align-items: center;
         justify-content: center;
@@ -129,6 +129,9 @@ flex-direction:column;
 width:19%;
 }
 #right-top{height:46.6%;
+    font-family: montserrat-medium;
+    font-weight:normal;
+font-style:normal;
 display:flex;
 justify-content: center;
 align-items: center;
@@ -155,3 +158,12 @@ border-bottom: 1px solid var(--border);
         font-style: normal;
     
     }
+
+@font-face {
+    font-family: 'montserratmedium';
+    src: url('montserrat-medium-webfont.woff2') format('woff2'),
+         url('montserrat-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
