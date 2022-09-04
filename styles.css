@@ -1,6 +1,7 @@
+*{font-family: montserrat;}
 :root{
-    --border:grey;
-    --green:green;
+    --border:rgb(229 229 229);
+    --green:rgb(28 138 67);
 }
 body{margin:0;}
 *{border-collapse: collapse;}
@@ -23,7 +24,7 @@ display:flex;
 width:62%;
 flex-direction:column;
 }
-.li{width:100%;display:flex;justify-content: center;}
+.li{width:100%;display:flex;justify-content: center;font-size:13px}
 .li:hover{color:var(--green)}
 #rest-top{height:46.6%;
     border-bottom:1px solid var(--border);
@@ -146,4 +147,11 @@ border-bottom: 1px solid var(--border);
     }
 
 
-
+    @font-face {
+        font-family: 'montserratregular';
+        src: url('montserrat-regular-webfont.woff2') format('woff2'),
+             url('montserrat-regular-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    
+    }

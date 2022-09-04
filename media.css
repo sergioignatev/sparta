@@ -14,6 +14,9 @@
     #search{width:100%;border:1px solid var(--border);height:70px;}
     #lang{border:1px solid var(--border)}
     #nav{display:flex;flex-direction:column;height:fit-content;}
+    #logo{margin-left:15px;}
+    #mob{margin-right:15px;}
+    #icon{margin-right:10px;}
 }
 @media(max-width:712px){
 #rest-bottom{
