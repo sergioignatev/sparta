@@ -41,6 +41,7 @@ display:flex;
     justify-content:center;
     border-left: 1px solid var(--border);
     border-right: 1px solid var(--border);
+    font-weight: 600;
 }
 #lang-content{width:70%;display:flex;
     justify-content: space-around;
@@ -129,7 +130,7 @@ flex-direction:column;
 width:19%;
 }
 #right-top{height:46.6%;
-    font-family: montserrat-medium;
+  
     font-weight:normal;
 font-style:normal;
 display:flex;
@@ -137,14 +138,14 @@ justify-content: center;
 align-items: center;
 color:var(--green);
 border-bottom: 1px solid var(--border);
-
+font-weight: 600;
 }
 #right-bottom{height:53.4%;
     width:100%;
     display:flex;
     justify-content: center;
     align-items: center;
-    
+    font-weight: 600;
     
     
     }
@@ -155,15 +156,7 @@ border-bottom: 1px solid var(--border);
         src: url('montserrat-regular-webfont.woff2') format('woff2'),
              url('montserrat-regular-webfont.woff') format('woff');
         font-weight: normal;
-        font-style: normal;
+        font-style: normal;}
+
     
-    }
-
-@font-face {
-    font-family: 'montserratmedium';
-    src: url('montserrat-medium-webfont.woff2') format('woff2'),
-         url('montserrat-medium-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
+  
