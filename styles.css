@@ -1,6 +1,6 @@
 :root{
     --border:grey;
-    --green:red;
+    --green:green;
 }
 body{margin:0;}
 *{border-collapse: collapse;}
